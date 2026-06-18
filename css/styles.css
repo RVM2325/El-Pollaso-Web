@@ -105,3 +105,32 @@ body {
     font-size: 1.1rem;
     color: #4a4a4a;
 }
+
+.rvm-footer {
+    background-color: var(--rvm-negro-carbon);
+}
+
+.rvm-footer-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--rvm-rojo-fuego);
+}
+
+.rvm-footer-texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.rvm-footer-link:hover {
+    color: var(--rvm-rojo-fuego) !important;
+    transition: color 0.2s ease;
+}
+
+.rvm-footer-copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    color: #888888;
+}
