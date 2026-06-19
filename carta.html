@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Carta - El Pollaso</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/estilos-rvm.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark rvm-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand rvm-brand" href="index.html">
+                🔥 El Pollaso
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="carta.html">La Carta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ubicanos.html">Ubícanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="container my-5 text-center">
+        <h1 class="rvm-main-title">Nuestra Carta</h1>
+        <p class="lead text-muted">Elige tu opción favorita y deléitate con el mejor sabor.</p>
+    </header>
+
+    <!-- cards present... -->
+    <main class="container mb-5">
+        <div class="row g-4">
+            
+            <!-- 1/4 de Pollo -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 rvm-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=600&auto=format&fit=crop" class="card-img-top rvm-card-img" alt="1/4 Pollo a la brasa">
+                    <div class="card-body text-center">
+                        <h3 class="card-title rvm-card-title">1/4 de Pollo a la Brasa</h3>
+                        <p class="card-text rvm-card-text">La porción perfecta para calmar el antojo personal. Viene bien jugoso.</p>
+                        <button type="button" class="btn rvm-btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalPlato1">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1/2 Pollo -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 rvm-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?q=80&w=600&auto=format&fit=crop" class="card-img-top rvm-card-img" alt="1/2 Pollo a la brasa">
+                    <div class="card-body text-center">
+                        <h3 class="card-title rvm-card-title">1/2 Pollo a la Brasa</h3>
+                        <p class="card-text rvm-card-text">Ideal para compartir en pareja. Incluye una generosa porción de papas.</p>
+                        <button type="button" class="btn rvm-btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalPlato2">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1 Pollo Entero -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 rvm-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=600&auto=format&fit=crop" class="card-img-top rvm-card-img" alt="Pollo entero a la brasa">
+                    <div class="card-body text-center">
+                        <h3 class="card-title rvm-card-title">1 Pollo a la Brasa Entero</h3>
+                        <p class="card-text rvm-card-text">El rey de la mesa. Perfecto para un almuerzo o cena familiar.</p>
+                        <button type="button" class="btn rvm-btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalPlato3">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Detalles 1/4 Pollo -->
+    <div class="modal fade" id="modalPlato1" tabindex="-1" aria-labelledby="modalPlato1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rvm-modal-content">
+                <div class="modal-header rvm-modal-header">
+                    <h5 class="modal-title rvm-modal-title" id="modalPlato1Label">🍗 Detalle: 1/4 de Pollo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-shadow="none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="fw-bold fs-4 text-danger mb-2">S/ 21.00</p>
+                    <p><strong>Incluye:</strong> 1/4 de Pollo a la brasa (pierna o pecho), una porción crujiente de papas fritas amarillas y ensalada fresca clásica.</p>
+                    <hr>
+                    <p class="text-muted"><small>🔥 Salsas incluidas: Mayonesa, mostaza, kétchup y nuestro ají pollero artesanal.</small></p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn rvm-btn-primary">Pedir por Delivery</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detalles 1/2 Pollo -->
+    <div class="modal fade" id="modalPlato2" tabindex="-1" aria-labelledby="modalPlato2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rvm-modal-content">
+                <div class="modal-header rvm-modal-header">
+                    <h5 class="modal-title rvm-modal-title" id="modalPlato2Label">🍗 Detalle: 1/2 Pollo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="fw-bold fs-4 text-danger mb-2">S/ 39.00</p>
+                    <p><strong>Incluye:</strong> Medio pollo a la brasa jugoso, una porción mediana de papas fritas y ensalada fresca grande para compartir.</p>
+                    <hr>
+                    <p class="text-muted"><small>🔥 Salsas incluidas: Todas las de la casa en tamaño mediano.</small></p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn rvm-btn-primary">Pedir por Delivery</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detalles 1 Pollo -->
+    <div class="modal fade" id="modalPlato3" tabindex="-1" aria-labelledby="modalPlato3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rvm-modal-content">
+                <div class="modal-header rvm-modal-header">
+                    <h5 class="modal-title rvm-modal-title" id="modalPlato3Label">🍗 Detalle: 1 Pollo Entero</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="fw-bold fs-4 text-danger mb-2">S/ 69.00</p>
+                    <p><strong>Incluye:</strong> Un espectacular pollo a la brasa entero, una súper porción familiar de papas fritas y una ensalada grande (fresca o cocida).</p>
+                    <hr>
+                    <p class="text-muted"><small>🔥 Salsas incluidas: Envases grandes de mayonesa y nuestro inconfundible ají de la casa.</small></p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn rvm-btn-primary">Pedir por Delivery</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 bg-dark text-light mt-auto">
+        <p class="mb-0">&copy; 2026 El Pollaso - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

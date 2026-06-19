@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcf8f2; /* fondo */
+    color: #333333;
+}
+
+/* Fonts-títulos */
+.rvm-brand, .rvm-title-display, .rvm-main-title {
+    font-family: 'Lilita One', sans-serif;
+}
+
+/* NAVBAR */
+.rvm-navbar {
+    background-color: #8B0000 !important;
+    border-bottom: 4px solid #FFD700; /* Línea-amarilla */
+}
+
+.rvm-brand {
+    font-size: 1.8rem;
+    color: #FFD700 !important;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.rvm-nav-links .nav-link {
+    font-weight: 600;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.rvm-nav-links .nav-link:hover, 
+.rvm-nav-links .nav-link.active {
+    color: #FFD700 !important; /* Resalta-mouse */
+}
+
+/* CAROUSEL */
+.rvm-carousel-img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.rvm-caption-bg {
+    background-color: rgba(139, 0, 0, 0.7); /* Fondo-rojo-texto */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+
+.rvm-title-display {
+    font-size: 2.5rem;
+    color: #FFD700;
+}
+
+/* BOTONES-TEXTOS */
+.rvm-main-title {
+    font-size: 3rem;
+    color: #8B0000;
+}
+
+.rvm-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rvm-btn-primary {
+    background-color: #FFD700;
+    color: #8B0000;
+    font-weight: 600;
+    border: 2px solid #8B0000;
+    border-radius: 25px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.rvm-btn-primary:hover {
+    background-color: #8B0000;
+    color: #FFD700;
+    border-color: #FFD700;
+}
